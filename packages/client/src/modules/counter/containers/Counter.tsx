@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import LazyHero from 'react-lazy-hero';
 
 import { PageLayout } from '../../common/components/web';
 import settings from '../../../../../../settings';
@@ -23,6 +24,9 @@ const Counter = ({ t }: CounterProps) => (
         }
       ]}
     />
+    <LazyHero imageSrc="https://unsplash.it/2000/1000">
+      <h1>Generic Startup Hype Headline</h1>
+    </LazyHero>
     <ServerCounter />
     <ReduxCounter />
     <ClientCounter />
